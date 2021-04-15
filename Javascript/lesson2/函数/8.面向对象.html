@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var student = {
+        name: 'zhansan',
+        age: 3,
+        sex: '男',
+        run: function () {
+          console.log(this.name + 'run...');
+        },
+      };
+      var xiaoming = {
+        name: 'xiaoming',
+      };
+      //原型对象
+      xiaoming.__proto__ = student;
+      var Bird = {
+        fly: function () {
+          console.log(this.name + 'fly....');
+        },
+      };
+      //小明的原型是Student
+      xiaoming.__proto__ = Bird;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <p id="newP">Hello,DragonPeng</p> -->
+
+    <p id="js">JavaScript</p>
+    <div id="list">
+      <p id="se">JavaSE</p>
+      <p id="ee">JavaEE</p>
+      <p id="me">JavaMe</p>
+    </div>
+
+    <script>
+      var js = document.getElementById('js'); //已经存在的节点
+      var list = document.getElementById('list');
+      //通过JS创建一个新的节点
+      var newP = document.createElement('p'); //创建一个P标签
+      newP.id = 'newP';
+
+      newP.innerText = 'hello.DragonPeng';
+      //创建一个标签节点
+      var myScript = document.createElement('script');
+      myScript.setAttribute('type', 'text/javascript');
+
+      //可以创建一个Style标签
+      var myStyle = document.createElement('style'); //创建了一个空style标签
+      myStyle.setAttribute('type', 'text/css');
+      myStyle.innerHTML = 'body{background-color: blue;}'; //设置标签内容
+      document.getElementsByTagName('head')[0].appendChild(myStyle);
+      //   list.appendChild(js);
+      //   list.append(newP);
+    </script>
+  </body>
+</html>

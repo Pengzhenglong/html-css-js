@@ -1,0 +1,43 @@
+#nav{
+    width: 300px;
+    background: #a0a0a0;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    /*  颜色   图片 ,图片位置  ，平铺方式 */
+    background: red  url("../image/a.PNG")  261px  -15px  no-repeat ;
+}
+
+/* ul{
+    background: #a0a0a0;
+} */
+
+/* ul  li */
+/* 
+list-style::
+none  去掉原点
+circle  空心圆
+decimal  数字
+square  正方形
+*/
+ul  li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    background-image:url("../image/b.PNG");
+    background-repeat: no-repeat;
+    background-position: 213px 4px;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+a:hover{
+    color: orange;  
+    text-decoration: underline;  
+}

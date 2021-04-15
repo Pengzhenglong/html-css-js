@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var student = {
+        name: 'zhansan',
+        age: 3,
+        sex: '男',
+      }; //{name: "zhansan", age: 3, sex: "男"}
+      //对象转化为JSON字符串 {"name":"zhansan","age":3,"sex":"男"}
+      var jasonStudent = JSON.stringify(student);
+
+      //json字符串转化为对象，参数为json字符串
+      var obj = JSON.parse('{"name":"zhansan","age":3,"sex":"男"}');
+      var obj = { a: 'hello', b: 'hellob' };
+      var json = '{"a":"hello","b":"hellob"}';
+    </script>
+  </body>
+</html>

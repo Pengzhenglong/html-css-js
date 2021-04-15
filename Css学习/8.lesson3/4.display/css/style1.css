@@ -1,0 +1,47 @@
+div {
+  margin: 10px;
+  padding: 5px;
+}
+#father {
+  border: 1px #000 solid;
+  overflow: auto;
+}
+#father::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.layer01 {
+  border: 1px #00f dashed;
+  display: inline-block;
+  float: left;
+}
+.layer02 {
+  border: 1px #00f dashed;
+  display: inline-block;
+  float: left;
+}
+
+.layer03 {
+  border: 1px #00f dashed;
+  display: inline-block;
+  float: right;
+}
+/*  clear: right;  右侧不允许有浮动元素
+    clear: left;  左侧不允许有浮动元素
+    clear: both;  两侧不允许有浮动元素
+     clear: none	默认值。允许浮动元素出现在两侧。
+*/
+.layer04 {
+  border: 1px #00f dashed;
+  font-size: 12px;
+  line-height: 23px;
+  display: inline-block;
+  float: right;
+  clear: both;
+}
+.clear {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}

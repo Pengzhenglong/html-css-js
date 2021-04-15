@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- 相对定位
+  相对自己原来的位置进行偏移 -->
+  <style>
+    div {
+      margin: 10px;
+      padding: 5px;
+      font-size: 12px;
+      line-height: 25px;
+    }
+    #father {
+      border: 1px solid #666;
+      padding: 0;
+    }
+    #first {
+      border: 1px dashed rgb(35, 204, 50);
+      background-color: cyan;
+      position: relative; /* 相对定位，上下左右  */
+      top: -20px;
+      left: 20px;
+    }
+    #second {
+      border: 1px dashed rgb(16, 58, 194);
+      background-color: blue;
+      position: relative;
+      bottom: -10px; /* 向下 */
+    }
+    #third {
+      border: 1px dashed rgb(167, 46, 92);
+      background-color: chartreuse;
+    }
+  </style>
+  <body>
+    <div id="father">
+      <div id="first">第一个盒子</div>
+      <div id="second">第二个盒子</div>
+      <div id="third">第三个盒子</div>
+    </div>
+  </body>
+</html>
